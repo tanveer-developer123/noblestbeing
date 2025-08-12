@@ -2,20 +2,24 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   return (
-    <main className="flex flex-col md:flex-row gap-6 p-4">
-      {/* Hero - 70% */}
-      <div className="md:w-[70%] w-full">
-        <Hero />
-      </div>
+    <>
+      <main className="flex flex-col md:flex-row gap-6 p-4">
+        {/* Hero - 70% */}
+        <div className="md:w-[70%] w-full">
+          <Hero />
+        </div>
 
-      {/* Sidebar - 30% */}
-      <div className="md:w-[30%] w-full">
-        <Sidebar />
-      </div>
-    </main>
+        {/* Sidebar - 30% */}
+        <div className="md:w-[30%] w-full">
+          <Sidebar />
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
 
