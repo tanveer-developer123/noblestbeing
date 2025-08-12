@@ -1,10 +1,14 @@
-import './App.css'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
 
-function App() {
-
+const App = () => {
   return (
     <>
-      Start a Buliding noblestbeing app
+      <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+        <Navbar />
+        <Home />
+      </div>
+
     </>
   )
 }

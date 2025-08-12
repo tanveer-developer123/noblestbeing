@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --site-body: #32373c;
+  --site-meta: #9aa4ad;
+}
